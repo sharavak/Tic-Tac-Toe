@@ -1,0 +1,155 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #7ec48d;
+
+}
+h1{
+    text-align: center;
+    color: rgb(15, 29, 48);
+    font-weight: 400;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    height: 100%
+}
+table{
+    width: 100%;
+    max-width: 400px;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+table thead tr td{
+    width: 109px;
+    border-left-color: rgba(233, 231, 241, 0.973);
+    border-left-style: solid;
+    border-left-width: 5px;
+    padding: 0px;
+    height: 105px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 4.5rem;
+    color: rgb(58, 32, 3);
+    font-weight: bolder;
+}
+table thead:nth-of-type(1) tr td:nth-of-type(1){
+    border: none;
+}
+table thead:nth-of-type(2) tr td:nth-of-type(1){
+    border: none;
+}
+table thead:nth-of-type(3) tr td:nth-of-type(1){
+    border: none;
+}
+table thead:nth-of-type(3){
+    border: none;
+}
+table thead{
+    width: 348px;
+    border-left-color: rgba(255, 255, 255, 0.973);
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    padding: 0px;
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+.but{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.but button{
+    background-color: whitesmoke;
+    color: rgb(7, 21, 51);
+    width: 5rem;
+    height: 1.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+}
+.winners{
+    background-color: rgb(0, 15 ,36);
+    opacity: 0.8;
+    position: absolute;
+    height: 10vh;
+    width: 400px;
+    display: block;
+    top: 385px;
+}
+.winner p{
+    font-size:  2.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 17px 0px 10px 0px;
+}
+.pos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+.pos span{
+    font-size: 1.3rem;
+    font-family: monospace;
+    color: #1b3c58;
+
+}
+.but button:hover{
+    border: 1px solid greenyellow;
+    transform: translateY(5px);
+    box-shadow: 1px 1px 2px 1px #1c201f;
+    transition: all 0.7s ease-in-out;
+}
+footer{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.resetGame{
+    width: 8rem;
+    height: 2rem;
+    background-color: rgb(9, 73, 158);
+    color: lawngreen;
+    cursor: pointer;
+}
+@media(max-width:360px){
+    .gameContainer{
+        width: 95%;
+    }
+    table{
+        width: 90%;
+    }
+    table thead{
+        width: 90%;
+    }
+    table thead tr td{
+        font-size: 2.5rem;
+        width: 85px;
+    }
+    h1{
+        font-size: 1.4rem;
+        margin:10px 0px 0px 0px
+    }
+    
+}
